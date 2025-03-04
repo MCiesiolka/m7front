@@ -2,7 +2,7 @@ addEventListener("DOMContentLoaded", async function(){
     document.querySelector("#updateBtn").addEventListener("click", updateSong)
     const urlparam = new URLSearchParams(window.location.search)
     const songID = urlparam.get("id")
-    const response = await fetch("https://mciesiolka.github.io/m7front/api/songs.json" + songID)
+    const response = await fetch("https://spurious-rogue-streetcar.glitch.me/api/songs.json" + songID)
     if(response.ok){
         let song = await response.json()
         document.querySelector("#songId").value = song._id
