@@ -12,7 +12,7 @@ async function addSong(){
         username : localStorage.getItem("uname")
     }
 
-    const response = await fetch("http://localhost:3000/api/songs", {
+    const response = await fetch("https://mciesiolka.github.io/m7front/", {
         method: "POST",
         headers: {
             "Content-Type" : "application/json"
