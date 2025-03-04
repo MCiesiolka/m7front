@@ -4,7 +4,7 @@ addEventListener("DOMContentLoaded", async function(){
 })
 
 async function getAllSongs(){
-    const response = await fetch("http://localhost:3000/api/songs/")
+    const response = await fetch("https://mciesiolka.github.io/m7front/")
     if(response.ok){
         const songs = await response.json()
         let html =""
