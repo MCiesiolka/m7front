@@ -12,7 +12,7 @@ async function addSong(){
         username : localStorage.getItem("uname")
     }
 
-    const response = await fetch("https://mciesiolka.github.io/m7front/api/songs.json", {
+    const response = await fetch("https://spurious-rogue-streetcar.glitch.me/api/songs.json", {
         method: "POST",
         headers: {
             "Content-Type" : "application/json"
