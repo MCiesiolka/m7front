@@ -12,7 +12,7 @@ async function login(username,password){
         username,
         password
     }
-    const response = await fetch("http://localhost:3000/api/auth",{
+    const response = await fetch("https://mciesiolka.github.io/m7front/api/songs.json",{
         method: "POST",
         headers:{
             "Content-Type" : "application/json"
